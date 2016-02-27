@@ -1,4 +1,4 @@
-Bookmarklet that returns a string of text containing identifying information for the current webpage (for select webpages). The text can be copied and used as a helpful source-pointing filename, if you wish to save the item to disk. This is useful for media files saved from the web: video, audio, photos, webcomics, etc. Or just about anything that may not provide its own source url.
+Bookmarklet that returns a string of text containing identifying information for the current webpage (for select webpages). The text can be copied and used as a helpful source-pointing filename for example if you wish to save the item to disk. This is useful for media files saved from the web: video, audio, photos, webcomics, etc. Or just about anything that may not provide its own source url.
 
 Generally the author is the first part of the string, to help you group items by author.
 
@@ -9,6 +9,8 @@ youtube - [channel name] [video id] [video title]
 deviantart - [url with '/' replaced with ' ']
 instagram* - [username] [post id]
 facebook - [name] [url with 'www.facebook.com', '/', and '?' replaced with ' ']
+
+*After exiting the bookmarklet prompt, you will immediately be taken to the direct URL of the media file.
 
 How to add to your browser:
 1. In pageid.js, copy the single-line javascript code under "// without whitespace".
@@ -24,4 +26,3 @@ How to use:
 4. Press Enter or Esc or click on OK or Cancel. It doesn't matter lol
 5. Do as you wish with the copied text.
 
-*After exiting the bookmarklet, you will immediately be taken to the direct URL of the media file.

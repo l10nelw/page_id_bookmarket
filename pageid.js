@@ -15,7 +15,7 @@ javascript:
     var b = location.href.split(/[\/&=?#]+/);
     var a1 = a[1];
     
-    if (a1 == 'www.reddit.com') {
+    if (a1.endsWith('reddit.com')) {
         a[7] // comment post
         ? out(document.title.split(' ')[0] + ' ' + a[5] + ' ' + a[7] + ' ')
         : out(document.querySelector('[data-author]').dataset.author + ' ' + a[5] + ' ');

@@ -21,11 +21,11 @@ javascript:
         : out(`${document.querySelector('[data-author]').dataset.author} ${a[5]} `);
     } else if (a1 == 'www.youtube.com') {
         out(`${document.querySelector('.yt-user-info').textContent.trim()} ${b[b.indexOf('v') + 1]} ${document.getElementById('eow-title').title}`);
-    } else if (a1.slice(-11) == '.tumblr.com') {
+    } else if (a1.endsWith('tumblr.com')) {
         out(`${a1} ${a[3]}`);
     } else if (a1 == 'www.facebook.com') {
         out(`${document.getElementById('fbPhotoPageAuthorName').firstChild.innerHTML} ${b.slice(2, 6).join(' ')}`);
-    } else if (a1.slice(-15) == '.deviantart.com') {
+    } else if (a1.endsWith('deviantart.com')) {
         out(a.slice(1, 4).join(' '));
     } else if (a1 == 'www.instagram.com' && a[2] == 'p') {
         out(window._sharedData.entry_data.PostPage[0].graphql.shortcode_media.owner.username + ' ' + a[3]);

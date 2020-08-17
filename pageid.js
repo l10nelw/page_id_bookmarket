@@ -25,9 +25,10 @@ javascript:
         for (let x in data) data = data[x].data.graphql.shortcode_media;
         out(data.owner.username + ' ' + a[3]);
         let media = qsa('li img[srcset], li video');
+        let len = media.length;
         let url =
-            !media ? qs('img[srcset], video').src :
-            media.length == 3 ? media[1].src :
+            !len ? qs('img[srcset], video').src :
+            len == 3 ? media[1].src :
             media[qs('.coreSpriteRightChevron') ? 0 : 1].src;
         location.href = url;
     } else void(0);

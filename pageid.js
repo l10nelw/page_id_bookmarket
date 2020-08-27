@@ -21,8 +21,7 @@ javascript:
     } else if (a1.endsWith('deviantart.com')) {
         out(a.slice(1, 4).join(' '));
     } else if (a1 == 'www.instagram.com' && a[2] == 'p') {
-        let data = window.__additionalData;
-        for (let x in data) data = data[x].data.graphql.shortcode_media;
+        let data = (Object.values(window.__additionalData)[0]?.data || window._sharedData.entry_data.PostPage[0]).graphql.shortcode_media;
         out(data.owner.username + ' ' + a[3]);
         let media = qsa('li img[srcset], li video');
         let len = media.length;

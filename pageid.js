@@ -15,7 +15,7 @@ javascript:
     } else if (a1 == 'www.youtube.com') {
         out(`${qs('.yt-user-info').textContent.trim()} ${b[b.indexOf('v') + 1]} ${gebi('eow-title').title}`);
     } else if (a1 == 'www.tiktok.com') {
-        out(`${a[2].slice(1)} ${a[4]}`);
+        out(location.href.split('@')[1].replace('/video/', ' '));
     } else if (a1.endsWith('tumblr.com')) {
         out(`${a1} ${a[3]}`);
     } else if (a1 == 'www.facebook.com') {
